@@ -20,13 +20,7 @@
     <title>ArinKei's Page</title>
 </head>
 <body>
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-root').innerHTML = data;
-            });
-    </script>
+    <div id="navbar-root"></div>
     <script src="navbar.js"></script>
 </body>
 </html>
