@@ -1,21 +1,8 @@
-// Navbar.js
-import React from 'react';
-
-function Navbar() {
-  return (
-    <header className="navbar">
-      <div className="logo">
-        <span>ArinKei</span>
-      </div>
-      <nav className="nav-links">
-        <a href="/Iam">나는</a>
-        <a href="/reserve">예약하기</a>
-        <a href="/special">특가 상품</a>
-        <a href="/guide">이용 안내</a>
-        <a href="/support">고객센터</a>
-      </nav>
-    </header>
-  );
-}
-
-export default Navbar;
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 60) { // 스크롤 위치가 60px 이상이면 스타일 변경
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
