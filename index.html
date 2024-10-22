@@ -20,21 +20,13 @@
     <title>ArinKei's Page</title>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <span>ArinKei</span>
-        </div>
-        <nav class="nav-links">
-            <a href="/Iam">나는...</a>
-            <a href="/stat">통계</a>
-            <a href="/goods">상품</a>
-            <a href="/info">이용 안내</a>
-        </nav>
-        <div class="nav-icons">
-            <a href="#"><i class="fas fa-user"></i></a>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        </div>
-    </header>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-root').innerHTML = data;
+            });
+    </script>
     <script src="navbar.js"></script>
 </body>
 </html>
