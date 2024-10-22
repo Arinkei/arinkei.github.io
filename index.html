@@ -3,34 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple JavaScript Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar .logo span {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #0078ff;
+        }
+
+        .navbar .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .nav-icons a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1.2em;
+        }
+
+        .navbar .nav-icons a:hover {
+            color: #0078ff;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+            }
+        }
+    </style>
+    <title>JejuPass-like Navbar</title>
 </head>
 <body>
-	<div id="wrapper" class="wrapper" data-v-c8d0a584=""><!---->
-	    <header id="header" class="">
-			<div class="inner">
-				<a href="https://www.jejupass.com/web" class="logo">제주패스</a>
-				<!----><!----><!---->
-				<div id="gnb">
-					<ul class="gnb-list"><!---->
-						<li><a href="https://rentcar.jejupass.com/web/rentcar" aria-selected="true">렌터카<!----></a></li><!---->
-						<li><a href="https://rentcar.jejupass.com/web/rentcar?region=japan&amp;administrativeCode=9801010100" aria-selected="false">해외렌터카<!----></a></li>
-						<li><a href="https://cafe.jejupass.com/web" aria-selected="false">카페패스<!----></a></li><!---->
-					</ul>
-				</div>
-				<ul class="etc-menu-list">
-					<li><a href="https://event.jejupass.com/web/event/events">이벤트</a></li>
-					<li><a href="https://help.jejupass.com/web">고객센터</a></li>
-				</ul>
-				<ul class="personal-menu-list">
-					<li><a href="https://auth.jejupass.com/web/login" class="btn btn-logout">로그아웃</a></li>
-					<li><a href="https://member.jejupass.com/web/mypage" class="btn btn-mypage">마이페이지</a></li>
-				</ul>
-			</div>
-		</header>
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
-    <script src="game.js"></script>
-	</div>
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://via.placeholder.com/150x40" alt="JejuPass Logo">
+            <span>JEJUPASS</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#">홈</a>
+            <a href="#">예약하기</a>
+            <a href="#">특가 상품</a>
+            <a href="#">이용 안내</a>
+            <a href="#">고객센터</a>
+        </nav>
+        <div class="nav-icons">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </header>
 </body>
 </html>
