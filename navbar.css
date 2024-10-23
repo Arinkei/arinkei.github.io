@@ -32,10 +32,10 @@
     display: flex;
     align-items: center;
     background: linear-gradient(270deg, #29ffb7, #2895f3, #ff2489, #29ffb7);
-    background-size: 400% 400%;
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     color: transparent;
-    animation: wave 2s ease infinite;
+    animation: wave 4s linear infinite;
 }
 
 .navbar.scrolled .logo span {
