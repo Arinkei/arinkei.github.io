@@ -1,3 +1,7 @@
+body {
+    height: 400vh;
+}
+
 main {
     margin: 10px;
     padding: 10px;
@@ -8,7 +12,8 @@ main {
 
 .lyrics {
     position: relative;
-    height: 100vh;
+    width: 100%;
+    text-align: center;
 }
 
 .lyric1 {
@@ -17,7 +22,7 @@ main {
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
     font-size: 24px;
-    text-align: center;
+    line-height: 1.5;
 }
