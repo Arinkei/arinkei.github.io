@@ -18,14 +18,7 @@
 }
 
 .navbar .logo a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    background: linear-gradient(270deg, #7FFFD4, #ADD8E6, #7FFFD4);
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: wave 5s ease infinite;
+
 }
 
 .navbar .logo img {
@@ -36,7 +29,14 @@
 .navbar .logo span {
     font-size: 1.5em;
     font-weight: bold;
-    color: #333;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: linear-gradient(270deg, #7FFFD4, #ADD8E6, #7FFFD4);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: wave 1s ease infinite;
 }
 
 .navbar.scrolled .logo span {
@@ -82,6 +82,5 @@
 }
 @keyframes wave {
     0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
