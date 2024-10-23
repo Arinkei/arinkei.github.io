@@ -11,7 +11,7 @@ main {
     height: 100vh;
 }
 
-.lyrics1 {
+.lyric1 {
     position: -webkit-sticky; /* 사파리 지원 */
     position: sticky;
     top: 50%;
