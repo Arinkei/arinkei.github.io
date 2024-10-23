@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 30px;
-    color: #333;
+    color: #555;
     line-height: 1.6;
     letter-spacing: 2px;
 }
