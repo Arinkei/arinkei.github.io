@@ -1,7 +1,11 @@
-.lyrics {
+main {
     display: flex;
+    height: 200vh;
     justify-content: center;
-    align-items: center;
+}
+
+.lyrics {
+    align-self: center;
     text-align: center;
     font-size: 30px;
     color: #555;
