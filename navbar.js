@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             document.getElementById('navbar-root').innerHTML = data;
 
+            const navbarRoot = document.querySelector('#navbar-root');
+            const viewportHeight = window.innerHeight;
+            
+            navbarRoot.style.height = viewportHeight + 'px';
+
             // 스크롤 이벤트 추가
             const navbar = document.querySelector('.navbar');
             window.addEventListener('scroll', function() {
