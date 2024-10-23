@@ -18,7 +18,7 @@
 }
 
 .navbar .logo a{
-
+    text-decoration: none;
 }
 
 .navbar .logo img {
@@ -31,7 +31,6 @@
     font-weight: bold;
     display: flex;
     align-items: center;
-    text-decoration: none;
     background: linear-gradient(270deg, #7FFFD4, #ADD8E6, #7FFFD4);
     background-size: 400% 400%;
     -webkit-background-clip: text;
