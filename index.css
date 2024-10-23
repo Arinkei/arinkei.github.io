@@ -1,13 +1,23 @@
 main {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
 }
 
 .lyrics {
-    align-self: center;
+    position: relative;
+    height: 100vh;
+}
+
+.lyrics1 {
+    position: -webkit-sticky; /* 사파리 지원 */
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 24px;
     text-align: center;
-    font-size: 30px;
-    color: #555;
-    line-height: 1.6;
-    letter-spacing: 2px;
 }
