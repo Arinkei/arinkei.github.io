@@ -1,3 +1,7 @@
+#navbar-root {
+    height: 100vh;
+}
+
 .navbar {
     background-color: #ffffff;
     display: flex;
