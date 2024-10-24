@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // 스크롤 이벤트 추가
             const navbar = document.querySelector('.navbar');
             window.addEventListener('scroll', function() {
-                if (window.scrollY > 60) { // 스크롤 위치가 60px 이상이면 스타일 변경
+                if (window.scrollY > 10) { // 스크롤 위치가 10px 이상이면 스타일 변경
                     navbar.classList.add('scrolled');
                 } else {
                     navbar.classList.remove('scrolled');
