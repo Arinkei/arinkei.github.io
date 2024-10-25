@@ -1,0 +1,32 @@
+main {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.lyrics {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 400vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.lyric1 {
+    position: -webkit-sticky; /* 사파리 지원 */
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.lyric1-out {
+    position: relative;
+}
