@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function Footer() {
     return (
-      <div className="flex item-center justify-center gap-6 bg-white w-screen h-20">
+      <div className="flex items-center justify-center gap-6 bg-white w-screen h-20">
         <a
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://discord.com"
+        href="https://discord.gg/5XHtBwXKDS"
         target="_blank"
         rel="noopener noreferrer"
         >

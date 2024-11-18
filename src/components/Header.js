@@ -1,16 +1,14 @@
 import Image from 'next/image';
+import Link from 'next/link'
 
 export default function Header() {
     return (
-        <div className="flex item-center justify-center gap-6 bg-white w-screen h-20">
-            <Image
-                className="dark:invert" 
-                src="/next.svg"
-                alt="Next.js logo"
-                width={180}
-                height={38}
-                priority>
-            </Image>
+        <div className="flex justify-center bg-white w-screen h-20 sticky">
+            <nav className='flex items-center justify-end gap-8'>
+                <Link className='flex items-center' href="/">Home</Link>
+                <Link className='flex items-center' href="/about">About</Link>
+                <Link className='flex items-center' href="/projects">Projects</Link>
+            </nav>
         </div>
-    )    
+    );    
 }
