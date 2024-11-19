@@ -13,7 +13,7 @@ export default function AboutPage(){
                     unoptimized>
                 </Image>
                 <ol className='list-inside text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]'>
-                    <li className="mb-2">이름 : 옴바다</li>
+                    <li className="mb-2">이름 : 옴바</li>
                     <li className="mb-2">나이 : 52</li>
                     <li className="mb-2">사는 곳 : 울산</li>
                     
