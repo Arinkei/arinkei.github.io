@@ -8,6 +8,7 @@ export default function Header() {
                 <Link className='flex items-center' href="/">Home</Link>
                 <Link className='flex items-center' href="/about">About</Link>
                 <Link className='flex items-center' href="/projects">Projects</Link>
+                <Link className='flex items-center' href="/game">Game</Link>
             </nav>
         </div>
     );    

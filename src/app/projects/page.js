@@ -12,17 +12,17 @@ export default function Projects(){
                 {projects.map((projects,index) => (
                     <div key={index} className="flex bg-white min-w-80 min-h-80 bg-opacity-80 flex-col items-center hover:scale-125
                     transform transition-transform duration-150">
-                        <p className='text-center text-orange-800 text-2xl min-h-6'>{projects.name}</p>
+                        <p className='items-center text-orange-800 text-2xl min-h-10'>{projects.name}</p>
                         <img
                             src= {projects.imgpath}
                             className=""
                             alt={'${projects.en}_img'}
-                            // width={200}
-                            height={200}/>
+                            width={300}
+                            height={200}
+                            />
                     </div>
                 ))}
             </div>
         </main>
-        
     );
 }
