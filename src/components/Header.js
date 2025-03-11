@@ -4,7 +4,7 @@ export default function Header() {
       <header style={{ backgroundColor: '#ffffd0', padding: '20px', textAlign: 'center' }}>
         <div className="hover">
             <ref>my home</ref>
-            <a>your's</a>
+            <a>your&apos;s</a>
             <a>here</a>
         </div>
       </header>
