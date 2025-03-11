@@ -6,8 +6,8 @@ const nextConfig = {
     images:{
         unoptimized: true,
     },
-    assetPrefix: isProd ? '/arinkei.github.io/' : '',
-    basePath: isProd ? '/arinkei.github.io/' : '',
+    assetPrefix: isProd ? '/arinkei.github.io' : '',
+    basePath: isProd ? '/arinkei.github.io' : '',
     output: 'export',
 };
 
