@@ -4,7 +4,7 @@ export const metadata = {
   title: "PGO",
   description: "PlayGround Only",
   icons:{
-    icon:"/favicon.ico",
+    icon:"/favicon.png",
   },
 };
 
